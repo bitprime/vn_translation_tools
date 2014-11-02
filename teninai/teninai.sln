@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pdis", "pdis\pdis.vcxproj", "{6ABCFBE2-8806-4463-B24A-D8F8C729A7A9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pasm", "pasm\pasm.vcxproj", "{69D61631-9168-4771-8CB6-B4EB2F0B7A09}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "atool", "atool\atool.vcxproj", "{21A7AD5B-22D4-4351-B750-579DAE8010C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6ABCFBE2-8806-4463-B24A-D8F8C729A7A9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6ABCFBE2-8806-4463-B24A-D8F8C729A7A9}.Debug|Win32.Build.0 = Debug|Win32
+		{6ABCFBE2-8806-4463-B24A-D8F8C729A7A9}.Release|Win32.ActiveCfg = Release|Win32
+		{6ABCFBE2-8806-4463-B24A-D8F8C729A7A9}.Release|Win32.Build.0 = Release|Win32
+		{69D61631-9168-4771-8CB6-B4EB2F0B7A09}.Debug|Win32.ActiveCfg = Debug|Win32
+		{69D61631-9168-4771-8CB6-B4EB2F0B7A09}.Debug|Win32.Build.0 = Debug|Win32
+		{69D61631-9168-4771-8CB6-B4EB2F0B7A09}.Release|Win32.ActiveCfg = Release|Win32
+		{69D61631-9168-4771-8CB6-B4EB2F0B7A09}.Release|Win32.Build.0 = Release|Win32
+		{21A7AD5B-22D4-4351-B750-579DAE8010C9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{21A7AD5B-22D4-4351-B750-579DAE8010C9}.Debug|Win32.Build.0 = Debug|Win32
+		{21A7AD5B-22D4-4351-B750-579DAE8010C9}.Release|Win32.ActiveCfg = Release|Win32
+		{21A7AD5B-22D4-4351-B750-579DAE8010C9}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

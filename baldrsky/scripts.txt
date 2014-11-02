@@ -1,0 +1,69 @@
+first 4 bytes of bytecode section (must be multiplied by 8)
+first 4 bytes of text section is the number of strings
+first 4 bytes of misc string section is number of strings
+first 4 bytes of last section is number of entries (each entry is 0x44 in size)
+
+baldr sky opcode information:
+max 0x3b opcodes
+
+0x00 - read dword
+0x01 - read dword
+0x02 - read dword?
+0x03 - NOP
+0x04 - read dword
+0x05 - read dword
+0x06 - read dword
+0x07 - read dword. complex
+0x08 - read dword
+0x09 - add
+0x0a - sub
+0x0b - mul
+0x0c - div
+0x0d - mod
+0x0e - read dword, jump?
+0x0f - none
+0x10 - none
+0x11 - or
+0x12 - and
+0x13 - xor
+0x14 - not
+0x15 - le
+0x16 - ge
+0x17 - lt
+0x18 - gt
+0x19 - eq
+0x1a - ne
+0x1b - NOP
+0x1c - none
+0x1d - read dword
+0x1e - NOP
+0x1f - read dword
+0x20 - NOP
+0x21 - read dword
+0x22 - read dword. text command?
+0x23 - read dword
+0x24 - NOP
+0x25 - read dword
+0x26 - NOP
+0x27 - read dword
+0x28 - NOP
+0x29 - NOP
+0x2a - read dword
+0x2b - none. some kind of comparison
+0x2c - read dword
+0x2d - shr
+0x2e - shl
+0x2f - read dword. some kind of add? jump?
+0x30 - read dword. sub?
+0x31 - read dword. mul?
+0x32 - read dword. div?
+0x33 - read dword. mod?
+0x34 - read dword. or?
+0x35 - read dword. and?
+0x36 - read dword. xor?
+0x37 - read dword. shr?
+0x38 - read dword. shl?
+0x39 - NOP
+0x3a - read dword. ?
+0x3b - read dword. ?
+

@@ -1,0 +1,1 @@
+for %%s in (*.bmp) do convert.exe "%%s" -channel rgb -resize 686x480 -gravity south -extent 640x480 "%%s"

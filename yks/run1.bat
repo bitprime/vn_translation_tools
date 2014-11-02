@@ -1,0 +1,1 @@
+for %%s in (*.xml) do ykscomp.exe %%s

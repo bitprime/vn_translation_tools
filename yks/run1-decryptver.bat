@@ -1,0 +1,1 @@
+for %%s in (*.xml) do decrypt.exe %%s && ykscomp.exe %%s

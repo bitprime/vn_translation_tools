@@ -1,0 +1,1 @@
+for %%s in (*.bmp) do convert.exe "%%s" -channel rgba -background transparent -gravity south -extent 640x480 "%%~ns.png"

@@ -1,0 +1,136 @@
+glsscriptcpl.obj
+
+
+CompileArgument:
+- 0x02 0x00 0x01
+
+CompileArgumentList:
+(none)
+
+CompileBegin:
+(conditional) - 0x04 (string) (int)
+
+CompileBreak:
+(conditional) - 0x07 0x00 (int)
+(looped) - 0x05
+- 0x06
+- (int)
+
+CompileCatch:
+- 0x06 (int) 
+(conditional) - 0x04 (string) (int)
+
+CompileConstant:
+(none)
+
+CompileContinue:
+(conditional) - 0x07 0x00 (int)
+(looped) - 0x05
+- 0x06
+- (int)
+
+CompileData:
+(none)
+
+CompileDeclareDef:
+(none)
+
+CompileDeclareType:
+(none)
+
+CompileElse:
+(conditional) - 0x05
+- 0x06 (int)
+
+CompileElseIf:
+(conditional) - 0x05
+- 0x06 (int)
+(conditional) - 0x07 0x00 (int)
+
+CompileEnd:
+(conditional) - 0x05
+
+CompileEndData:
+(none)
+
+CompileEndFunc:
+- 0x02 0x00 0x04 (int) 0x09 0x00
+
+CompileEndIf:
+(conditional) - 0x05
+
+CompileEndStruct:
+- 0x02 0x00 0x04 (int) 0x09 0x01
+
+CompileEndTry:
+- 0x05
+(conditional) - 0x05
+
+CompileEndWhile:
+(conditional) - 0x05
+- 0x06 (int)
+
+CompileExpression: (complex)
+- 0x02 0x00
+(conditional) - 0x05 0x08
+(else conditional) - 0x04 (int)
+(else conditional) - 0x07 (int64)
+
+(conditional) - 0x02 0x00 0x06 (string)
+
+(conditional - array index) - 0x02 0x05 0x01 
+(conditional - end of array index) - 0x0b
+
+(conditional - array initialization? '{') - 0x02 0x00 0x02
+(conditional - do until end of initialization '}') - 0x0c 0x00
+
+(conditional) - 0x02 0x00 0x04 (int)
+
+(conditional - push int) - 0x02 0x00 0x04 (int)
+(conditional - push real) - 0x02 0x00 0x05 (real)
+(conditional - push string) - 0x02 0x00 0x06 (string)
+(conditional - push int64) - 0x02 0x00 0x07 (int64)
+
+(conditional) - 0x0d (byte?)
+
+(conditional) - 0x02 0x00
+(conditional - if typeId >= 8) - 0x00 (const string)
+(conditional) - (byte)
+(conditional) - 0x03 0xff
+(conditional) - (int)
+
+(conditional - class member) - 0x02 (byte) 0x01 (expression) 0x0b
+
+(conditional) - 0x02 0x02 0x06 (string)
+
+(conditional) - 0x02 0x02 0x01
+
+(conditional) - 0x08 (byte) (int) (const string)
+
+(conditional) - 0x02 (byte) 0x06 (string)
+(conditional) - 0x02 (byte) 0x04 (int)
+
+(conditional) - 0x0c (byte)
+
+(conditional) - 0x08 0x02 (int) (const string)
+(conditional) - 0x0a 0x06 (const string)
+(conditional) - 0x0b
+(conditional) - 0x0e (byte)
+(conditional) - 0x03 (byte)
+
+CompileExternDef:
+(none)
+
+CompileFor:
+(conditional) - 0x04 (string) (int)
+(conditional) - 0x00 0x01 0x04 (string)
+(conditional) - 0x03 0x01
+(conditional) - 0x06 (int) (expression) 0x01
+(conditional) - 0x06 (int) (expression) 0x07 (bool 1/0) (int) 0x05 0x06 (int)
+(conditional) - 0x01
+(conditional) - 0x04 (string) (int)
+(conditional) - 0x00 0x01 0x01 (string)
+(conditional) - 0x03 0x01
+
+CompileFunction:
+(conditional) - 0x04 (string) (int)

@@ -1,0 +1,1 @@
+for %%s in (*.bmp) do alpha.exe 2 "%%s" "%%s"

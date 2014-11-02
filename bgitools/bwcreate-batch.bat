@@ -1,0 +1,1 @@
+for %%s in (*.ogg) do bwcreate "%%s" "%%~ns"

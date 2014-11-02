@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaldrSky_DatTool", "BaldrSky_DatTool\BaldrSky_DatTool.csproj", "{D8E8307A-6DB5-4EBF-A234-7282C4D67400}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8E8307A-6DB5-4EBF-A234-7282C4D67400}.Debug|x86.ActiveCfg = Debug|x86
+		{D8E8307A-6DB5-4EBF-A234-7282C4D67400}.Debug|x86.Build.0 = Debug|x86
+		{D8E8307A-6DB5-4EBF-A234-7282C4D67400}.Release|x86.ActiveCfg = Release|x86
+		{D8E8307A-6DB5-4EBF-A234-7282C4D67400}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

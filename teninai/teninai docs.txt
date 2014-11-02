@@ -1,0 +1,55 @@
+2 bytes - length of function until retn call. calculate by size * 2 + 2
+
+
+Parse scripting: 1001B9B0
+
+
+
+Valid scripting:
+Fn - Function
+Fn checks the 2 bytes after 'Fn'. It adds those two bytes to [ebp+a28] at 100bbb0. not sure what the purpose is. 4 bytes total
+
+Rt - Return
+Ex - Exit
+Sy - System?
+Rv
+Sw - Switch
+Bk - Break?
+Cm - Call module
+Cl - Call?
+Cn - Call?
+Es
+Bs
+Tr
+Ep
+Cf - Call internal function?
+Ca - Call? 2 bytes total. Calls a function that does a lot more. 
+In the big function it will read 2 more bytes, store them, and then read another 2 more and then store those as well.
+The first 2 bytes after 'Ca' is what file (in the tenshi_dvd.a file) to call
+
+Wh - While statement?
+If - If statement
+#i - Integer
+#l - Long
+#/@/$/~s - String?
+~/$m - ?
+{ - Bracket for functions etc. skip 2 bytes ahead after reading a {. 3 bytes total
+': ' (: + space) - end of statement?
+
+
+for function commands:
+if the bytecode ends in 01 then the relevant code is at 1001F870 
+
+
+handle bytecode above with the lower byte above 0xf0 100217E0
+add 0xFFFFA704 to get the number?
+
+
+
+after { is the address to the ending Rt command. if it's 0xffff then it means it's the last one in the script
+after a } is the start address of the block
+
+
+
+to modify text without worrying about cross script calls, just jump to separate areas in the script where you can store the next text commands
+if there is no native jump command then just add one. it shouldn't be too hard to add one
